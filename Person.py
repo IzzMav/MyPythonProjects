@@ -10,12 +10,18 @@ class Person:
     def get_age(self):
         return self.age
     def set_name(self, new_name):
+        while (new_name == ""):
+            print("Insert a valid name!")
+            new_name = input()
         self._name = new_name
     def set_surname(self, new_surname):
+        while (new_surname == "") :
+            print("Insert a valid name!")
+            new_surname = input()
         self._surname = new_surname
     def set_age(self, new_age):
         new_age = int(input())
-        while new_age == 0:
+        while new_age <= 0:
             print ("Please insert a valid age!")
             new_age = int(input())
         self.age = new_age
