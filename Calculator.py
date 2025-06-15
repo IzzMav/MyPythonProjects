@@ -22,7 +22,8 @@ while choice:
                 result = num1-num2
                 print (result)
             else:
-                print (0)
+                result = num2-num1
+                print (result)
         elif operation == mul:
             result = num1*num2
             print (result)
